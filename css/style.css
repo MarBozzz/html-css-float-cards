@@ -21,6 +21,13 @@ body {
 }
 
 /* utility */
+
+.clearfix::after {
+  content:'';
+  display: table;
+  clear: both;
+}
+
 .debug {
   background-color: rgba(255, 80, 70, 0.50);
   border: 1px solid black;
@@ -31,4 +38,54 @@ h1 {
   font-size: 2rem;
   color: #E53170;
   padding-bottom: 40px;
+}
+
+.row {
+  padding: 25px 0;
+}
+
+.row .col {
+  height: 100px;
+  width: calc(100% / 3 - 30px);
+  float: left;
+  background-color:#0F0E17;
+  box-shadow: #DCDCDB;
+  /*margin: 0 7px 15px 7px;*/
+}
+
+.row .col:not(:last-child) {
+  margin-right: 20px; 
+  }
+
+.row .col img {
+    height: 100px;
+    float: left;
+}
+
+.row .col .text {
+  color: white;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.row .col .text span {
+  padding-left: 10px;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+
+.profession {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.email {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  color: #36A8DC;
 }
