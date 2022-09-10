@@ -9,14 +9,15 @@
 body {
   font-family: 'Fredoka', sans-serif;
   background-color: #FFFFFE;
+  color: #0f0e17;
 }
 
 
 /* components */
 .container {
-  max-width: 1200px;
-  width: 70%;
-  margin: 20px auto;
+  width: 90%;
+  max-width: 1170px;
+  margin: 50px auto;
   text-align: center;
 }
 
@@ -40,36 +41,34 @@ h1 {
   padding-bottom: 40px;
 }
 
-.row {
-  padding: 25px 0;
-}
-
 .row .col {
-  height: 100px;
-  width: calc(100% / 3 - 30px);
   float: left;
-  background-color:#0F0E17;
-  box-shadow: #DCDCDB;
-  /*margin: 0 7px 15px 7px;*/
+  height: 100px;
+  width: calc(100% / 3);
+  min-width: 344px;
+  padding: 0 16px;
+  margin-bottom: 50px;
 }
 
-.row .col:not(:last-child) {
-  margin-right: 20px; 
-  }
-
-.row .col img {
-    height: 100px;
-    float: left;
+.card {
+  color: #FFFFFE;
+  background-color: #0F0E17; 
+  box-shadow: 0px 0px 15px rgba(0,0,0,.50);
 }
 
-.row .col .text {
-  color: white;
-  padding-top: 10px;
+.avatar {
+  width: 100px;
+  float: left;
+}
+
+.text {
+  float: left;
   text-align: left;
-}
-
-.row .col .text span {
   padding-left: 10px;
+  padding-top: 10px;
+  width: calc(100% - 100px - 16px);
+  height: 100%;
+  background-color:#0F0E17;
 }
 
 .name {
@@ -84,8 +83,13 @@ h1 {
   line-height: 1.5rem;
 }
 
-.email {
+.card a {
   font-size: 0.8rem;
   line-height: 1.5rem;
   color: #36A8DC;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
 }
